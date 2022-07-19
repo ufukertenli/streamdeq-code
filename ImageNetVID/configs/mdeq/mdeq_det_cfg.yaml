@@ -1,0 +1,49 @@
+MODEL:
+  NAME: mdeq
+  NUM_LAYERS: 4
+  NUM_GROUPS: 8
+  DROPOUT: 0.0
+  WNORM: true
+  DOWNSAMPLE_TIMES: 2
+  EXPANSION_FACTOR: 6
+  POST_GN_AFFINE: false
+  EXTRA:
+    FULL_STAGE:
+      NUM_MODULES: 1
+      NUM_BRANCHES: 4
+      BLOCK: BASIC
+      BIG_KERNELS:
+        - 0
+        - 0
+        - 0
+        - 0
+      HEAD_CHANNELS:
+        - 32
+        - 64
+        - 128
+        - 256
+      FINAL_CHANSIZE: 2048
+      NUM_BLOCKS:
+        - 1
+        - 1
+        - 1
+        - 1
+      NUM_CHANNELS:
+        - 88
+        - 176
+        - 352
+        - 704
+      FUSE_METHOD: SUM
+DEQ:
+  F_SOLVER: 'broyden'
+  B_SOLVER: 'broyden'
+  STOP_MODE: 'abs'
+  F_THRES: 26
+  B_THRES: 26
+  RAND_F_THRES_DELTA: 0
+  SPECTRAL_RADIUS_MODE: false
+LOSS:
+  JAC_LOSS_FREQ: 0.1
+  JAC_LOSS_WEIGHT: 5.0
+  JAC_INCREMENTAL: 50000
+  PRETRAIN_JAC_LOSS_WEIGHT: 0.03
