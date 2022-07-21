@@ -2,18 +2,11 @@
 *.pkl
 *.pkl.json
 *.log.json
-work_dirs/
-MDEQ-Vision/*.out
-MDEQ-Vision/*.err
-MDEQ-Vision/slurm/*
-MDEQ-Vision/slurm/**
 MDEQ-Vision/output/
-MDEQ-Vision/*.png
 *.pyc
 *.so
 *.log
 *.data
-data/
 *.pkl
 .DS_Store/
 __pycache__/
@@ -23,14 +16,7 @@ __pycache__/
 copy_memory/
 submissions/
 Mess/
-.ipynb_checkpoints/
-MDEQ-Vision/.ipynb_checkpoints/
-MDEQ-Vision/.ipynb_checkpoints/**
-*.ipynb
-runs/
 private_*
-*_old/
-log/
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
@@ -136,8 +122,6 @@ venv.bak/
 # mypy
 .mypy_cache/
 
-data/
-data
 .vscode
 .idea
 .DS_Store
