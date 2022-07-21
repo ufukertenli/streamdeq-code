@@ -7,7 +7,6 @@ MDEQ-Vision/output/
 *.so
 *.log
 *.data
-data/
 *.pkl
 .DS_Store/
 __pycache__/
