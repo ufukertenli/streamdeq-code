@@ -41,6 +41,7 @@ DEQ:
   F_THRES: 1
   B_THRES: 30
   SPECTRAL_RADIUS_MODE: false
+  MODE: 'stream'
 CUDNN:
   BENCHMARK: true
   DETERMINISTIC: false
