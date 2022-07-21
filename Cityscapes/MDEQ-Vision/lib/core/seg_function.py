@@ -160,7 +160,10 @@ def validate(config, testloader, model, lr_scheduler, epoch, writer_dict, device
 
             if reset_flag:
                 if hasattr(model, 'module'):
-                    model.module.model.reset_prev_outs()
+                    if hasattr(model.module, 'model'):
+                        model.module.model.reset_prev_outs()
+                    else:
+                        model.module.reset_prev_outs()
                 elif hasattr(model, 'model'):
                     model.model.reset_prev_outs()
                 else:
@@ -219,7 +222,10 @@ def testval(config, test_dataset, testloader, model, sv_dir='', sv_pred=False):
 
             if reset_flag:
                 if hasattr(model, 'module'):
-                    model.module.model.reset_prev_outs()
+                    if hasattr(model.module, 'model'):
+                        model.module.model.reset_prev_outs()
+                    else:
+                        model.module.reset_prev_outs()
                 elif hasattr(model, 'model'):
                     model.model.reset_prev_outs()
                 else:
@@ -273,7 +279,10 @@ def test(config, test_dataset, testloader, model, sv_dir='', sv_pred=True):
                                                       mode=mode)
             if reset_flag:
                 if hasattr(model, 'module'):
-                    model.module.model.reset_prev_outs()
+                    if hasattr(model.module, 'model'):
+                        model.module.model.reset_prev_outs()
+                    else:
+                        model.module.reset_prev_outs()
                 elif hasattr(model, 'model'):
                     model.model.reset_prev_outs()
                 else:
