@@ -436,7 +436,7 @@ class MDEQNet(nn.Module):
         b_thres = kwargs.get('b_thres', self.b_thres)
         deq_m = kwargs.get('deq_mode', True)
 
-        if isinstance(x_, list):  # Student case to start from teacher features
+        if isinstance(x_, list):  # Streaming case to start from previous frame's features
             x = x_[0]
             z_list = []
             for elem in x_[1:]:
