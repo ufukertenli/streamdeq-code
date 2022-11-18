@@ -11,10 +11,12 @@ We present StreamDEQ, a method that infers frame-wise representations on videos 
 If you find this repository useful, please consider citing our work:
 
 ```
-@article{ertenli2022streaming,
-  title={Streaming Multiscale Deep Equilibrium Models},
-  author={Ertenli, Can Ufuk and Akbas, Emre and Cinbis, Ramazan Gokberk},
-  journal={arXiv preprint arXiv:2204.13492},
-  year={2022}
+@InProceedings{ertenli2022streaming,
+  author="Ertenli, Can Ufuk and Akbas, Emre and Cinbis, Ramazan Gokberk",
+  title="Streaming Multiscale Deep Equilibrium Models",
+  booktitle="European Conference on Computer Vision (ECCV)",
+  year="2022",
+  pages="189--205",
+  organization={Springer}
 }
 ```
