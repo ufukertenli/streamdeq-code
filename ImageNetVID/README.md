@@ -34,7 +34,7 @@ The code presented here merges [MMDetection](https://github.com/open-mmlab/mmdet
 
 ## Usage
 
-* Download ImageNET-VID & DET datasets from the [official source](http://image-net.org/challenges/LSVRC/2015/2015-downloads) and structure the paths as follows:
+* Download ImageNET-VID & DET datasets from the [official source](https://image-net.org/challenges/LSVRC/2015/index.php) and structure the paths as follows:
 
     ```
     ./data/ILSVRC/
