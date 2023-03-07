@@ -8,7 +8,9 @@ We present StreamDEQ, a method that infers frame-wise representations on videos 
 
 ## Qualitative Results
 
-![Baseline with 2 iterations per frame](resources/Baseline_2_iteration.gif) ![StreamDEQ with 2 iterations per frame](resources/StreamDEQ_2_iteration.gif)
+Baseline with 2 iterations per frame            |  StreamDEQ with 2 iterations per frame
+:-------------------------:|:-------------------------:
+![](resources/Baseline_2_iteration.gif)  |  ![](resources/StreamDEQ_2_iteration.gif)
 
 ## Citation
 
